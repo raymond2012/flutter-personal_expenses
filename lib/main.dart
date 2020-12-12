@@ -52,11 +52,12 @@ class _MyHomePageState extends State<MyHomePage> {
         context: ctx,
         builder: (_) {
           // return NewTransaction(_addNewTransaction);
-          return GestureDetector(
+          var gestureDetector = GestureDetector(
             onTap: () {},
             child: NewTransaction(_addNewTransaction),
             behavior: HitTestBehavior.opaque,
           );
+          return gestureDetector;
         });
   }
 
