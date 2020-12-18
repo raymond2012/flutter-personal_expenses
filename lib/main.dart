@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 // import 'package:flutter/services.dart';
 
 import './widgets/transaction_list.dart';
-import './widgets/new_transactions.dart';
+import 'widgets/new_transaction.dart';
 import './models/transaction.dart';
 import './widgets/chart.dart';
 
@@ -187,6 +187,12 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ],
           );
+  }
+
+  @override
+  void didUpdateWidget(covariant MyHomePage oldWidget) {
+    print("didUpdateWidget MyHomePage");
+    super.didUpdateWidget(oldWidget);
   }
 
   @override
